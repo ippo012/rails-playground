@@ -1,0 +1,11 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/audiojs/1.0.1/audio.min.js" integrity="sha512-n1UxE3D0oAro7q72ZVxyGIUqB3DBt+cYVNujO4yFXm74LVPkzUUgPyP5UGEkDEDAMGLNkDo4BnIMrE/M8b5lCw==" crossorigin="anonymous"></script>
+
+<h1>Hello, Rails!</h1>
+
+<%= audio_tag 'audio.mp3' %>
+
+<script>
+audiojs.events.ready(function() {
+    var as = audiojs.createAll();
+});
+</script>
